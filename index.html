@@ -129,26 +129,10 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recently, quadrupedal locomotion has achieved
-            significant success, but their manipulation capabilities, partic-
-            ularly in handling large and heavy objects, remain limited,
-            restricting their usefulness in demanding real-world applica-
-            tions such as search and rescue, construction, and industrial
-            automation. This paper tackles the task of obstacle-aware, long-
-            horizon pushing by multiple quadrupedal robots. We propose
-            a hierarchical multi-agent reinforcement learning framework
-            with three levels of control. The high-level controller integrates
-            an RRT planner and a centralized adaptive policy to generate
-            subgoals, while the mid-level controller uses a decentralized
-            goal-conditioned policy to guide the robots toward these sub-
-            goals. A pre-trained low-level locomotion policy executes the
-            movement commands. We evaluate our method against several
-            baselines in simulation, demonstrating significant improvements
-            over baseline approaches, with 48.1% higher success rates and
-            24.7% reduction in completion time than the best baseline.
-            Our framework successfully enables long-horizon, obstacle-
-            aware manipulation tasks like Push-Cube and Push-T on Go1
-            robots in the real world.
+            Recently, quadrupedal locomotion has achieved significant success, but their manipulation capabilities, particularly in handling large and heavy objects, remain limited,
+            restricting their usefulness in demanding real-world applications such as search and rescue, construction, and industrial automation. This paper tackles the task of obstacle-aware, long-horizon pushing by multiple quadrupedal robots. We propose a hierarchical multi-agent reinforcement learning framework
+            with three levels of control. The high-level controller integrates an RRT planner and a centralized adaptive policy to generate subgoals, while the mid-level controller uses a decentralized goal-conditioned policy to guide the robots toward these sub-
+            goals. A pre-trained low-level locomotion policy executes the movement commands. We evaluate our method against several baselines in simulation, demonstrating significant improvements over baseline approaches, with 48.1% higher success rates and 24.7% reduction in completion time than the best baseline. Our framework successfully enables long-horizon, obstacle-aware manipulation tasks like Push-Cube and Push-T on Go1 robots in the real world.
           </p>
         </div>
       </div>
@@ -162,21 +146,7 @@
         <img src="./static/images/framework.png" alt="Framework" style="width: 100%; height: auto; margin-bottom: 20px;">
         <div class="content has-text-justified">
           <p>
-            To enable quadrupedal robots to collaboratively perform
-            long-horizon pushing tasks in environments with obstacles,
-            we propose a hierarchical reinforcement learning framework. 
-            This framework consists of three
-            layers of controllers. At the top level, an RRT planner gen-
-            erates a geometrically feasible trajectory without accounting
-            for the robots' pushing capabilities or the dynamics of multi-
-            ple robots and the object. The high-level adaptive policy then
-            uses this trajectory as a reference to assign a subgoal for the
-            target object, based on the dynamic states of the environment,
-            object, and robots. Using this common subgoal, each robot's
-            mid-level pushing policy provides velocity commands to its
-            corresponding low-level policy. Due to the computational
-            demands of the RRT planner, it is executed only once at
-            the start of each episode. 
+            To enable quadrupedal robots to collaboratively perform long-horizon pushing tasks in environments with obstacles, we propose a hierarchical reinforcement learning framework composed of three layers of controllers. 
           </p>
         </div>
       </div>
@@ -197,9 +167,6 @@
     <!--/ Paper video. -->
   </div>
 </section>
-
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
